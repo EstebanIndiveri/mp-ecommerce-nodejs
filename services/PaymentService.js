@@ -14,7 +14,7 @@ class PaymentService {
 
   async createPaymentMercadoPago(name, price, unit, img) {
     const url = `${this.mercadoPagoUrl}/preferences?access_token=${this.tokensMercadoPago.test.access_token}`;
-
+    img= 'https://estebanindi-mp-commerce-nodejs.herokuapp.com/'+img.substring(1);
     const items = [
       {
         id: "1234",
