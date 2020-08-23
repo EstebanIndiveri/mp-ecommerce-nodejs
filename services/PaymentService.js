@@ -14,12 +14,12 @@ class PaymentService {
 
   async createPaymentMercadoPago(name, price, unit, img) {
     const url = `${this.mercadoPagoUrl}/preferences?access_token=${this.tokensMercadoPago.test.access_token}`;
-    img= 'https://estebanindi-mp-commerce-nodejs.herokuapp.com/'+img.substring(1);
+    img= 'https://estebanindi-mp-commerce-nodejs.herokuapp.com'+img.substring(1);
     const items = [
       {
         id: "1234",
         title: name,
-        description: "Dispositivo movil de Tienda e-commerce",
+        description: "Dispositivo móvil de Tienda e-commerce",
         picture_url: img,
         category_id: "1234",
         quantity: parseInt(unit),
