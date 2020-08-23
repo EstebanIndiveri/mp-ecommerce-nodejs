@@ -17,13 +17,11 @@ class PaymentService {
     img= 'https://estebanindi-mp-commerce-nodejs.herokuapp.com'+img.substring(1);
     const items = [
       {
-        id: "1234",
+        id: 1234,
         title: name,
         description: "Dispositivo móvil de Tienda e-commerce",
         picture_url: img,
-        category_id: "1234",
         quantity: parseInt(unit),
-        currency_id: "ARS",
         unit_price: parseFloat(price)
       }
     ];
